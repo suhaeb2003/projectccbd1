@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+/*=========UNIVERSAL CODE=========*/
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/*==========REUSABLE COMPONANT=========*/
+.container{
+    width: 110rem;
+    margin: auto;
+}
+section{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+h1 h2 h3{
+   font-weight: 700;
+}
+/*=========HEADER SECTION=========*/
+#header{
+    background: url(./Image/web-template.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-bottom: 10rem;
+}
+
+
+.beautify {
+    width: 40%;
+    text-align: left;
+    margin-top: 9rem;
+}
+
+.beautify h1 {
+    font-size: 4.5rem;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.beautify p {
+    font-size: 1.3rem;
+    text-align: left;
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+}
+.beautify .start_free {
+    background: #fb527a;
+    color: white;
+    padding: 1rem;
+    border: none;
+    margin-right: 2rem;
+    border-radius: .4rem;
+    transition: 0.5s;
+}
+.beautify .start_free:hover{
+    background: tomato;
+}
+/*=========SERVISES SECTION=========*/
+.servises {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+.row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2.5rem 2.5rem;
+}
+
+.singlebox {
+    border: .19rem solid gray;
+    border-radius: .4rem;
+}
+
+.singlebox p {
+    width: 58%;
+    margin: auto;
+    font-size: 1.2rem;
+    margin-bottom: 8rem;
+}
+
+.singlebox h3 {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+.singlebox i {
+    color: #fb587f;
+    font-size: 4rem;
+    padding: 4.5rem 11rem;
+}
+/*==============TUTORIAL SECTION=============*/
+#tutorial{
+    background: linear-gradient(#000000d1,#000000bd),url(./Image/13.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#tutorial .servises h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#tutorial .servises h2 {
+    font-size: 2.5rem;
+}
+section#tutorial {
+    color: white;
+}
+/*==============TARGET SECTION=============*/
+.target .row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+section.target {
+    background: #f7f3f7;
+}
+
+.target_single {
+    background: white;
+    padding: 3rem;
+    transition: .3s;
+}
+
+.target_single {
+    background: white;
+    padding: 3rem;
+    transition: .3s;
+    border-radius: .3rem;
+    box-shadow: 0px 3px 6px 0px;
+}
+.target_single h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.target_single.active{
+    background: #ff517b;
+    color: white;
+    border-radius: .3rem;
+    box-shadow: 0px 3px 6px 0px black;
+}
+.target_single i {
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.target_single p {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.target_single:hover {
+    background: #ff517b;
+    color: white;
+}
+.target_single:hover h3::after{
+    background: white;
+}
+.target_single h3::after {
+    content: "";
+    background: #ff668b;
+    width: 5rem;
+    height: .3rem;
+    position: absolute;
+    top: 29px;
+    border-radius: 1.5rem;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.5s;
+}
+.target_single.active h3::after{
+    background: white;
+    color: white;
+}
+/*=======TEAM SECTION========*/
+section#team .row {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+progress {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    background: #c117a8;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+
+label {
+    font-size: 2rem;
+    text-align: left;
+}
+.pe{
+    text-align: left;
+}
+progress::-webkit-progress-value {
+    background: #ff517b;
+}
+
+
+.team h1 {
+    text-align: left;
+    font-size: 3rem;
+}
+
+.team h3 {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+.team p {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 11rem;
+}
+
+.team ul li {
+    float: left;
+    padding: 1rem;
+    background: #c117a8;
+    margin-right: 0.5rem;
+    width: 2rem;
+}
+.team ul li a i{
+    transition: 0.5s;
+    font-size: 1.6rem;
+}
+.team ul li:hover i {
+   
+   transform:rotate(360deg);
+}
+
+.team ul li a {
+    color: white;
+    
+    transition: 0.5s;
+}
+.claient img{
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    border: .2rem solid green;
+    width: 38%;
+}
+
+.team ul {
+    /* width: 21rem; */
+    overflow: hidden;
+}
+button.btn {
+    background: #FF517B;
+    color: white;
+    padding: .7rem 3rem;
+    font-size: 1.5rem;
+    border: none;
+    transition: 0.5s;
+    border-radius: .4rem;
+}
+
+button.btn:hover {
+    background: green;
+}
+/*=======EWARD SECTION========*/
+
+#eward{
+    background:url(./Image/bg1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.eward {
+    width: 41%;
+    color: white;
+    margin: auto;
+    padding: 10rem;
+    margin-top: 2rem;
+}
+
+.eward p {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    margin-bottom: 1rem;
+}
+
+.eward h3 {
+    color: #ea660d;
+    margin-top: .6rem;
+}
+/*==========AWESOME SECTION===========*/
+#future .row {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0rem 4rem;
+}
+.awesome {
+    margin-bottom: 6rem;
+}
+
+.awesome p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.phn2 {
+    margin-left: -5rem;
+}
+
+.creative1 {
+    margin-bottom: 8rem;
+}
+
+.creative1 i {
+    padding: 2rem;
+    border-radius: 100%;
+    border: .7rem solid #eff3f7;
+    font-size: 1.4rem;
+    transition: .3s;
+}
+.creative1 i:hover{
+    background: #ff517b;
+    color: white;
+}
+.creative1 .active i{
+    background: #ff517b;
+    color: white;
+}
+
+.awesome-detials h3 {
+    text-align: left;
+    margin-bottom: .5rem;
+}
+
+.awesome-detials span {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.awesome-detials p {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+
+
+.awesome-detials {
+    text-align: left;
+}
